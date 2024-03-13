@@ -177,3 +177,6 @@ document.getElementById("submitArmor").addEventListener("click", function(event)
     document.getElementById("output").textContent = armorRoll;
 });
 }
+
+
+// adding a change here
