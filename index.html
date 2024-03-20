@@ -8,7 +8,7 @@
     <script src="script.js"></script>
 </head>
 <body>
-    <h2>Submit Your Stats</h2>
+    <!--<h2>Submit Your Stats</h2>
     <form id="myForm">
        
         <label for="lastName">Last Name:</label>
@@ -35,11 +35,14 @@
 
             <button type="button" id="submitDexterity">Submit Dexterity</button><br><br>
         
-
+    <div class="strengthDiv">
         <label for="strength">Strength:</label>
         <input type="number" id="strength" name="strength"><br><br>
 
             <button type="button" id="submitStrength">Submit Strength</button><br><br>
+
+    </div>
+        
 
         <label for="constitution">Constitution:</label>
         <input type="number" id="constitution" name="constitution"><br><br>
@@ -59,9 +62,9 @@
         
 
         <input type="submit" value="Submit All">
-    </form>
+    </form> 
 
-    <p id="output"></p>
+    <p id="output"></p> -->
 
 <div class = "top">
     <div class = "name">
@@ -71,7 +74,7 @@
         <h1>Character Name</h1>
     </div>
     <div>
-        <form>
+        <form class="raceForm">
             <label>Race:</label>
             <input id="race">
 
@@ -82,56 +85,58 @@
             <input id="level">
         </form>
     </div>
-</div> <br><br>
+</div>
 
-<div class ="statsContainer">
+<div class="savingsAndStats">
     <h1>Saving Throws</h1>
-    <div class ="stats">
-        <label>Strength:</label>
-        <input id="strength">
-        <div class="modifier">
-            <p id="strengthModifier">placeholderText</p>
-            <!--"placeholderText" is used as a bookmark to use for JS for my modifier, go back and delete later-->
+    <div class ="statsContainer">
+        <div class ="stats">
+            <label>Strength:</label>
+            <input id="strength">
+            <div class="modifier">
+                <p id="strengthModifier">placeholderText</p>
+                <!--"placeholderText" is used as a bookmark to use for JS for my modifier, go back and delete later-->
+            </div>
         </div>
-    </div>
 
-    <div class ="stats">
-        <label>Dexterity:</label>
-        <input id="dexterity">
-        <div class ="modifier">
-            <p id="dexterityModifier">placeholderText</p>
+        <div class ="stats">
+            <label>Dexterity:</label>
+            <input id="dexterity">
+            <div class ="modifier">
+                <p id="dexterityModifier">placeholderText</p>
+            </div>
         </div>
-    </div>
 
-    <div class ="stats">
-        <label>Constitution:</label>
-        <input id="constitution">
-        <div class="modifier">
-            <p id="constitutionModifier">placeholderText</p>
+        <div class ="stats">
+            <label>Constitution:</label>
+            <input id="constitution">
+            <div class="modifier">
+                <p id="constitutionModifier">placeholderText</p>
+            </div>
         </div>
-    </div>
 
-    <div class="stats">
-        <label>Intelligence:</label>
-        <input id="intelligence">
-        <div class="modifier">
-            <p id="intelligenceModifier">placeholderText</p>
+        <div class="stats">
+            <label>Intelligence:</label>
+            <input id="intelligence">
+            <div class="modifier">
+                <p id="intelligenceModifier">placeholderText</p>
+            </div>
         </div>
-    </div>
 
-    <div class="stats">
-        <label>Widsom:</label>
-        <input id="wisdom">
-        <div class="modifier">
-            <p id="wisdom">placeholderText</p>
+        <div class="stats">
+            <label>Widsom:</label>
+            <input id="wisdom">
+            <div class="modifier">
+                <p id="wisdom">placeholderText</p>
+            </div>
         </div>
-    </div>
 
-    <div class="stats">
-        <label>Charisma:</label>
-        <input id="charisma">
-        <div class="modifier">
-            <p id="charismaModifier">placeholderText</p>
+        <div class="stats">
+            <label>Charisma:</label>
+            <input id="charisma">
+            <div class="modifier">
+                <p id="charismaModifier">placeholderText</p>
+            </div>
         </div>
     </div>
 </div>
@@ -216,46 +221,45 @@
             </div>
 
             <div class="spellsNames">
-                
-        <table border="1">
-            <thead>
-                <tr>
-                    <th>Name</th>
-                    <th>Level</th>
-                    <th>Damage</th>
-                    <th>Effect</th>
-                </tr>
-            </thead>
-            <tbody>
-                <tr>
-                    <td><input type="text" placeholder="Spell Name"></td>
-                    <td><input type="number" placeholder="Level"></td>
-                    <td><input type="text" placeholder="Damage"></td>
-                    <td><input type="text" placeholder="Effect"></td>
-                </tr>
-                <tr>
-                    <td><input type="text" placeholder="Spell Name"></td>
-                    <td><input type="number" placeholder="Level"></td>
-                    <td><input type="text" placeholder="Damage"></td>
-                    <td><input type="text" placeholder="Effect"></td>
-                </tr>
-                <tr>
-                    <td><input type="text" placeholder="Spell Name"></td>
-                    <td><input type="number" placeholder="Level"></td>
-                    <td><input type="text" placeholder="Damage"></td>
-                    <td><input type="text" placeholder="Effect"></td>
-                </tr>
-                <tr>
-                    <td><input type="text" placeholder="Spell Name"></td>
-                    <td><input type="number" placeholder="Level"></td>
-                    <td><input type="text" placeholder="Damage"></td>
-                    <td><input type="text" placeholder="Effect"></td>
-                </tr>
-            </tbody>
-        </table>
-                    </div>
-                </div>
+                <table border="1">
+                    <thead>
+                        <tr>
+                            <th>Name</th>
+                            <th>Level</th>
+                            <th>Damage</th>
+                            <th>Effect</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td><input type="text" placeholder="Spell Name"></td>
+                            <td><input type="number" placeholder="Level"></td>
+                            <td><input type="text" placeholder="Damage"></td>
+                            <td><input type="text" placeholder="Effect"></td>
+                        </tr>
+                        <tr>
+                            <td><input type="text" placeholder="Spell Name"></td>
+                            <td><input type="number" placeholder="Level"></td>
+                            <td><input type="text" placeholder="Damage"></td>
+                            <td><input type="text" placeholder="Effect"></td>
+                        </tr>
+                        <tr>
+                            <td><input type="text" placeholder="Spell Name"></td>
+                            <td><input type="number" placeholder="Level"></td>
+                            <td><input type="text" placeholder="Damage"></td>
+                            <td><input type="text" placeholder="Effect"></td>
+                        </tr>
+                        <tr>
+                            <td><input type="text" placeholder="Spell Name"></td>
+                            <td><input type="number" placeholder="Level"></td>
+                            <td><input type="text" placeholder="Damage"></td>
+                            <td><input type="text" placeholder="Effect"></td>
+                        </tr>
+                    </tbody>
+                </table>
             </div>
+        </div>
+    </div>
 
     <div class="inventorySection">
         <div class="inventoryInfo">

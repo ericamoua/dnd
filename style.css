@@ -5,3 +5,36 @@ body {
     background-repeat: no-repeat; /* Prevents the background image from repeating */
     /* You can add more properties as needed */
 }
+
+.strengthDiv {
+    background-image: url('/images/strengthsnip.png');
+    width: 100px; 
+}
+
+.name {
+    text-align: center;
+}
+
+.raceForm {
+    text-align: center;
+}
+
+.savingsAndStats {
+    text-align: center;
+    padding-bottom: 24px;;
+}
+
+.statsContainer {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
+    grid-template-rows: 1fr;
+    gap: 0px 12px;
+    grid-auto-flow: row;
+    grid-template-areas:
+        ". . . . . ."; 
+}
+
+.stats {
+    border: solid 1px;
+    border-radius: 12px;
+}
