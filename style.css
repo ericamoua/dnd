@@ -32,9 +32,24 @@ body {
     grid-auto-flow: row;
     grid-template-areas:
         ". . . . . ."; 
+    place-items: center;
 }
 
 .stats {
     border: solid 1px;
-    border-radius: 12px;
+    border-radius: 50%;
+    width: 155px;
+    height: 155px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.modifier {
+    border: solid 1px;
+    border-radius: 50%;
+    width: 100px;
+    height: 100px;
+    margin-top: 20px;
 }
