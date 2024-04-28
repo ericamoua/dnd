@@ -175,4 +175,12 @@
     //     var armorRoll = armor;
     //     document.getElementById("output").textContent = armorRoll;
     // });
+
+    document.getElementById('roll').addEventListener('click', function () {
+        let rollCount = Math.floor(Math.random() * 20) + 1
+        if(rollCount === 20){
+            alert('Critical Hit!');
+        }
+        M.toast({html: rollCount})
+    });
 }
